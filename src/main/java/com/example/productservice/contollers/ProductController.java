@@ -18,7 +18,7 @@ public class ProductController {
     private CategoryRepository categoryRepository;
     private ProductService productService;
 
-    public ProductController(@Qualifier("FakeStoreProductService") ProductService productService, CategoryRepository categoryRepository) {
+    public ProductController(@Qualifier("SelfProductService") ProductService productService, CategoryRepository categoryRepository) {
         this.productService = productService;
         this.categoryRepository = categoryRepository;
     }
